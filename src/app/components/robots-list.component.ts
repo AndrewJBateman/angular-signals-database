@@ -22,7 +22,9 @@ import { MatIconModule } from '@angular/material/icon';
           matListItemMeta
           mat-icon-button
           (click)="robotsService.deleteRobot(robot.code)"
-        ></button>
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
       </mat-list-item>
     </mat-list>
   `,
