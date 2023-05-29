@@ -29,7 +29,7 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/list.png)
+![Example screenshot](./img/robots.png)
 
 ## :signal_strength: Technologies
 
@@ -46,15 +46,26 @@
 
 ## :computer: Code Examples
 
-* 
+* functions from `robots.service.ts` to add qnd delete robots
 
 ```typescript
+  addRobot(newRobot: Robot): void {
+    setTimeout(() => {
+      this.robots.update((robots) => [newRobot, ...robots]);
+      this.router.navigate(['/']);
+    }, 500);
+  }
 
+  deleteRobot(code: string): void {
+    setTimeout(() => {
+      this.robots.update((robots) => robots.filter((rob) => rob.code !== code));
+    }, 500);
+  }
 ```
 
 ## :cool: Features
 
-* tba
+* Angular signals means less code and avoids having to check the entire component tree when there is a state change in just one part of the tree. Presumably Zone.js will be removed from the Angular core bundle once Signals becomes standard.
 
 ## :clipboard: Status & To-Do List
 
