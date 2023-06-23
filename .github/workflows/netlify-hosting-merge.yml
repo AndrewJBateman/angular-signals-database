@@ -2,7 +2,7 @@ name: Deploy to Netlify Hosting on merge
 "on":
   push:
     branches:
-      - master
+      - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       - uses: nwtgck/actions-netlify@v2
         with:
           publish-dir: "./dist/angular-signals-database/browser"
-          production-branch: master
+          production-branch: main
           production-deploy: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
