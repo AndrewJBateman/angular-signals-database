@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-  command = "ng build --configuration production && npm run copy:files"
+  command = "npm run build:ssr && npm run copy:files"
   publish = "netlify/functions/"
 
 [functions]
