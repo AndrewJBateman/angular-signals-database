@@ -1,5 +1,11 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/start"
   status = 200
-  
+
+[build]
+  command = "ng build --configuration production && npm run copy:files"
+  publish = "netlify/functions/"
+
+[functions]
+  included_files = ["dist/**"]
