@@ -23,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
           mat-icon-button
           (click)="robotsService.deleteRobot(robot.code)"
         >
-          <mat-icon color="warn">delete</mat-icon>
+          <mat-icon color="warn">Delete</mat-icon>
         </button>
       </mat-list-item>
     </mat-list>
