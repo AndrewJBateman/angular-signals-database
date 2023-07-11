@@ -34,6 +34,4 @@ import { MatIconModule } from '@angular/material/icon';
 export class RobotsListComponent {
   robotsService = inject(RobotsService);
   robots = this.robotsService.robots;
-
-  constructor() {}
 }

@@ -4,12 +4,12 @@ import { RobotsListComponent } from './components/robots-list.component';
 
 export const routes: Routes = [
   {
-    path: "",
-    pathMatch: "full",
-    component: RobotsListComponent
+    path: '',
+    pathMatch: 'full',
+    component: RobotsListComponent,
   },
   {
-    path: "add",
-    component: AddRobotComponent
-  }
+    path: 'add',
+    component: AddRobotComponent,
+  },
 ];
