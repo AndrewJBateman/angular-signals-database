@@ -69,8 +69,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working but incomplete
-* To-Do: Add robot component to be done
+* Status: Working
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
