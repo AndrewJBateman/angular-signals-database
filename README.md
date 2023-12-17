@@ -33,8 +33,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v16](https://angular.io/)
-* [Angular Material v16](https://material.angular.io/)
+* [Angular v17](https://angular.io/)
+* [Angular Material v17](https://material.angular.io/)
 * [Angular signals](https://angular.io/guide/signals)
 
 ## :floppy_disk: Setup
